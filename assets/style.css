@@ -1,6 +1,10 @@
 :root{
     --main-bg-color: radial-gradient(circle, #ededed, #add8e6ff);
+    --nav-gradient: linear-gradient(to right, #4337ff, #c0bcff, #9AF5FF); 
     --card-gradient: linear-gradient(to right, #9AF5FF , white);
+    --card-width: auto;
+    /* --outline-color: 2px solid orchid; */
+    --footer-gradient: linear-gradient(to left, #c0bcff, #9AF5FF) 
 }
 
 * {
@@ -9,6 +13,7 @@
     padding: 0;
     margin: 0;
     color: black;
+
 }
 
 body{
@@ -19,8 +24,8 @@ header{
     display: flex;
     justify-content: space-between;
     padding-inline: 2em;
-    background-image: var(--card-gradient);
-    border: 3px solid saddlebrown;
+    background-image: var(--nav-gradient);
+    /* outline: 3px solid saddlebrown; */
 }
 header > *{
     margin-top: .5em;
@@ -28,13 +33,13 @@ header > *{
 }
 
 header nav {
-    color: black;
+    color: white;
 }
 
 .nav-styling{
     padding-top: 1em;
     padding-bottom: 1em;
-    border: 2px solid blueviolet;
+    /* outline: 2px solid blueviolet; */
     align-items: center;
 }
 
@@ -45,33 +50,102 @@ header nav ul{
 }
 
 header h1 {
-    border: 2px solid darkgreen;
+    /* outline: 2px solid darkgreen; */
 }
 
 img{
     height: 10em;
     max-width: 100%;
-    border: 2px solid red;
-}
-
-#lorem{
-    border: 2px solid red;
+    /* outline: 2px solid red; */
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .background-card{
     background-image: var(--card-gradient);
     margin: 2em;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
+    /* width: var(--card-width); */
 }
 
-.block-A{
-    font-weight: bolder;
-    color: purple;
+.main-heading{
+    color: whitesmoke;
 }
 
-.block-B{
-    font-weight: bolder;
-    color: orangered;
+.side-by-side{
+    margin: 2em;
+    display: flex;
+    align-items: center;
+    /* outline: var(--outline-color); */
+}
+
+#about-card h2 {
+    color: black;
+}
+
+#about-card div {
+    /* outline: var(--outline-color); */
+}
+
+#about-title{
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+#main-project{
+    display: flex;
+    flex-direction: column;
+    /* outline: var(--outline-color); */
+    align-items: center;
+}
+
+#chess-image{
+    width: fit-content;
+    justify-content: center;
+}
+
+#other-projects-h2{
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.side-proj-header{
+    flex-direction: column;
+}
+
+div.side-proj-header h3{
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+footer{
+    background-image: var(--footer-gradient);
+    /* outline: 2px solid red; */
+    padding-top: 2em;
+    padding-bottom: 2em;
+    justify-content: space-between;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#trying{
+    /* outline: 3px solid blue; */
+}
+
+#target-span{
+    display: flex;
+    
+    /* outline: 3px solid red; */
+}
+
+.big-font-size{
+    font-size: larger;
 }
 
 
