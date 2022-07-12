@@ -1,0 +1,82 @@
+:root{
+    --main-bg-color: radial-gradient(circle, #ededed, #add8e6ff);
+    --card-gradient: linear-gradient(to right, #9AF5FF , white);
+}
+
+* {
+    /* reset styling */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+body{
+    background-image: var(--main-bg-color);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2em;
+    background-image: var(--card-gradient);
+    border: 3px solid saddlebrown;
+}
+header > *{
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+header nav {
+    color: black;
+}
+
+.nav-styling{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 2px solid blueviolet;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 2em;
+    text-decoration: none;
+}
+
+header h1 {
+    border: 2px solid darkgreen;
+}
+
+img{
+    height: 10em;
+    max-width: 100%;
+    border: 2px solid red;
+}
+
+#lorem{
+    border: 2px solid red;
+}
+
+.background-card{
+    background-image: var(--card-gradient);
+    margin: 2em;
+    outline: 2px solid blue;
+}
+
+.block-A{
+    font-weight: bolder;
+    color: purple;
+}
+
+.block-B{
+    font-weight: bolder;
+    color: orangered;
+}
+
+
+
+
+
+
+
