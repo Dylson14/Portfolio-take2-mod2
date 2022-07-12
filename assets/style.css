@@ -4,7 +4,8 @@
     --card-gradient: linear-gradient(to right, #9AF5FF , white);
     --card-width: auto;
     /* --outline-color: 2px solid orchid; */
-    --footer-gradient: linear-gradient(to left, #c0bcff, #9AF5FF) 
+    --footer-gradient: linear-gradient(to left, #c0bcff, #9AF5FF); 
+    --text-color: #420075;
 }
 
 * {
@@ -80,7 +81,7 @@ img{
 }
 
 #about-card h2 {
-    color: black;
+    color: var(--text-color);
 }
 
 #about-card div {
@@ -90,9 +91,10 @@ img{
 #about-title{
     text-decoration: underline;
     margin-bottom: 1em;
+    color: var(--text-color);
 }
 
-#main-project{
+.main-project{
     display: flex;
     flex-direction: column;
     /* outline: var(--outline-color); */
@@ -105,7 +107,7 @@ img{
 }
 
 #other-projects-h2{
-    color: red;
+    color: black;
     display: flex;
     justify-content: center;
 }
@@ -117,6 +119,7 @@ img{
 div.side-proj-header h3{
     margin-bottom: 1em;
     margin-top: 2em;
+    color: var(--text-color);
 }
 
 footer{
@@ -134,8 +137,13 @@ footer div{
     justify-content: space-between;
 }
 
-#trying{
+#Contacts{
+    padding-inline: 2em;
+}
+
+#made-by{
     /* outline: 3px solid blue; */
+    margin-inline: 2em;
 }
 
 #target-span{
@@ -145,7 +153,13 @@ footer div{
 }
 
 .big-font-size{
-    font-size: larger;
+    font-size: 1.5em;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
 }
 
 
